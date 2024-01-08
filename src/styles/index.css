@@ -1,12 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@300&family=Roboto:wght@300;400&display=swap');
 
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+body {
+    background-color: rgb(243, 243, 243);
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#title{
+    font-size: 5rem;
+    color:rgb(221, 218, 218);
+    margin-top: 50px;
+    font-weight: lighter;
+}
+#todo-list {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    background-color: rgb(243, 243, 243);
+    border: none;
+}
+ul {
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+    border: none;
+    box-shadow: 5px 5px 20px 0px #a3a2a2;   
+    text-align: left !important;
+}
+.todo-list-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.task-container {
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: left;
+    justify-content: space-between; 
+    width: 93%; 
+    padding: 8px 0;
+}
+.delete-icon {
+    cursor: pointer;
+    font-size: 1rem;
+}
+  
+  
